@@ -1,0 +1,19 @@
+table {
+  margin: auto;
+}
+
+th {
+  font-weight: bold;
+  color: white;
+  background-color: black;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-evenly;
+}
