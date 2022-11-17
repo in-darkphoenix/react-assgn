@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./Todo.css";
 import Task from "../Task/Task";
 
 const Todo = () => {
   const [state, setState] = useState([]);
   const [req, setReq] = useState("");
+  const idx = useRef(-1);
 
   const getData = () => {
     fetch("http://localhost:3001/todos")
@@ -57,10 +58,10 @@ const Todo = () => {
       });
   };
 
-  const editTask = (id) => {
+  const editTask = () => {
     const userTask = document.getElementById("task");
 
-    fetch(`http://localhost:3001/todos/${id}`, {
+    fetch(`http://localhost:3001/todos/${idx.current}`, {
       method: "PATCH",
       body: JSON.stringify({
         task: userTask.value,
@@ -84,8 +85,10 @@ const Todo = () => {
       <div className="task-input">
         {req === "" ? (
           <h3>No Action Selected</h3>
-        ) : (
+        ) : req === "Add" ? (
           <Task inputType={`${req} task`} actionType={req} action={addTask} />
+        ) : (
+          <Task inputType={`${req} task`} actionType={req} action={editTask} />
         )}
       </div>
 
@@ -109,6 +112,7 @@ const Todo = () => {
                     <button
                       style={{ backgroundColor: "#FFE15D" }}
                       onClick={() => {
+                        idx.current = element.id;
                         setReq("Edit");
                       }}
                     >
