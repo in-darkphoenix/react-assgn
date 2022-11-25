@@ -1,0 +1,13 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.tools {
+    
+}
+
+.tools > ul {
+  list-style: none;
+}

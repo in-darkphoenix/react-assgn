@@ -1,0 +1,64 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Muffin Mix - Raisin Bran",
+      "price": 186,
+      "description": "Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti."
+    },
+    {
+      "id": 2,
+      "name": "Beans - Fine",
+      "price": 119,
+      "description": "Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat."
+    },
+    {
+      "id": 3,
+      "name": "Capon - Breast, Double, Wing On",
+      "price": 183,
+      "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien."
+    },
+    {
+      "id": 4,
+      "name": "Cherries - Bing, Canned",
+      "price": 179,
+      "description": "Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis."
+    },
+    {
+      "id": 5,
+      "name": "Shiratamako - Rice Flour",
+      "price": 101,
+      "description": "Proin risus."
+    },
+    {
+      "id": 6,
+      "name": "Pails With Lids",
+      "price": 120,
+      "description": "In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat."
+    },
+    {
+      "id": 7,
+      "name": "Glycerine",
+      "price": 196,
+      "description": "Nulla tellus."
+    },
+    {
+      "id": 8,
+      "name": "Tuna - Sushi Grade",
+      "price": 167,
+      "description": "Ut tellus. Nulla ut erat id mauris vulputate elementum."
+    },
+    {
+      "id": 9,
+      "name": "Beef - Rouladin, Sliced",
+      "price": 151,
+      "description": "Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat."
+    },
+    {
+      "id": 10,
+      "name": "Mousse - Passion Fruit",
+      "price": 57,
+      "description": "Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis."
+    }
+  ]
+}
